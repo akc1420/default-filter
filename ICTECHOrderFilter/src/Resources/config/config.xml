@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Configurations</title>
+        <title lang="de-DE">Konfigurationen</title>
+
+        <input-field type="bool">
+            <name>status</name>
+            <label>Active</label>
+            <label lang="de-DE">Aktiv</label>
+            <defaultValue>false</defaultValue>
+        </input-field>
+
+        <input-field type="single-select">
+            <name>orderFilter</name>
+            <label>Default order filter</label>
+            <label lang="de-DE" >Standard-Bestellfilter</label>
+            <options>
+                <option>
+                    <id>lastYear</id>
+                    <name>Last Year</name>
+                    <name lang="de-DE">Letztes Jahr</name>
+                </option>
+                <option>
+                    <id>lastQuarter</id>
+                    <name>Last Quarter</name>
+                    <name lang="de-DE">Letztes Quartal</name>
+                </option>
+                <option>
+                    <id>lastMonth</id>
+                    <name>Last Month</name>
+                    <name lang="de-DE">Im vergangenen Monat</name>
+                </option>
+                <option>
+                    <id>lastWeek</id>
+                    <name>Last Week</name>
+                    <name lang="de-DE">Letzte Woche</name>
+                </option>
+                <option>
+                    <id>lastDay</id>
+                    <name>Last Day</name>
+                    <name lang="de-DE">Letzter Tag</name>
+                </option>
+            </options>
+            <defaultValue>lastYear</defaultValue>
+        </input-field>
+    </card>
+</config>
